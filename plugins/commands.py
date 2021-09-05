@@ -28,7 +28,7 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join My Updates Channel to use this Bot!**",
+                    text="**Please Join Our Updates Channel to use this Bot!       ഞങ്ങളുടെ അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്താൽ മാത്രമേ മൂവീസ് കിട്ടുവോള്ളു !**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -85,7 +85,7 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join Our Updates Channel to use this Bot! ഞങ്ങളുടെ അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്താൽ മാത്രമേ മൂവി കിട്ടുവോള്ളു!**",
+            text="**Please Join Our Updates Channel to use this Bot!         ഞങ്ങളുടെ അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്താൽ മാത്രമേ മൂവി കിട്ടുവോള്ളു!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -102,11 +102,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("CLICK HERE TO SEARCH MOVIE", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("JOIN CHANNEL", url="https://t.me/CinemaCompanyOFFICIAL")
+                        InlineKeyboardButton("🔍 SEARCH MOVIE 🔎", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("♨️ UPDATES CHANNEL ♨️", url="https://t.me/CinemaCompanyOFFICIAL")
                     ],
                     [
-                        InlineKeyboardButton("MOVIES REQUEST GROUP", url="https://t.me/cinemacompany_officials")
+                        InlineKeyboardButton("👥 MOVIES REQUEST GROUP 👥", url="https://t.me/cinemacompany_officials")
                     ]
                 ]
             )
@@ -195,8 +195,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/CinemaCompanyOFFICIAL'),
-            InlineKeyboardButton('Video', url=f'{TUTORIAL}')
+            InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL'),
+            InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/cinemacompany_officials')
         ]
         ]
-    await message.reply(text=f"<b>Developer : <a href='https://t.me/subinps_bot'>SUBIN</a>\nLanguage : <code>Python3</code>\nLibrary : <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a>\nSource Code : <a href='{TUTORIAL}'>Click here</a>\nUpdate Channel : <a href='https://t.me/Mo_Tech_YT'>Mo Tech YT</a> </b>", reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True)
+    
