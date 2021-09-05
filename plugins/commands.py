@@ -32,10 +32,10 @@ async def start(bot, cmd):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                                InlineKeyboardButton("♨️ JOIN UPDATES CHANNEL ♨️", url=invite_link.invite_link)
                             ],
                             [
-                                InlineKeyboardButton("🔄 Try Again", callback_data=f"checksub#{file_id}")
+                                InlineKeyboardButton("🔄 TRY AGAIN", callback_data=f"checksub#{file_id}")
                             ]
                         ]
                     ),
@@ -67,10 +67,10 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🖥️ How To Own 🖥️', url=f'{TUTORIAL}')
+                        InlineKeyboardButton('♨️ JOIN CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL')
                     ],
                     [
-                        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🔍 SEARCH AGAIN 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -85,11 +85,11 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Please Join Our Updates Channel to use this Bot! ഞങ്ങളുടെ അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്താൽ മാത്രമേ മൂവി കിട്ടുവോള്ളു!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 Join Updates Channel 📢", url=invite_link.invite_link)
+                        InlineKeyboardButton("♨️ JOIN UPDATES CHANNEL ♨️", url=invite_link.invite_link)
                     ]
                 ]
             )
@@ -102,11 +102,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Bot Updates", url="https://t.me/Mo_Tech_YT")
+                        InlineKeyboardButton("CLICK HERE TO SEARCH MOVIE", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("JOIN CHANNEL", url="https://t.me/CinemaCompanyOFFICIAL")
                     ],
                     [
-                        InlineKeyboardButton("About", callback_data="about")
+                        InlineKeyboardButton("MOVIES REQUEST GROUP", url="https://t.me/cinemacompany_officials")
                     ]
                 ]
             )
@@ -195,7 +195,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('Update Channel', url='https://t.me/Mo_Tech_YT'),
+            InlineKeyboardButton('Update Channel', url='https://t.me/CinemaCompanyOFFICIAL'),
             InlineKeyboardButton('Video', url=f'{TUTORIAL}')
         ]
         ]
