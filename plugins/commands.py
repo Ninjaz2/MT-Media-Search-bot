@@ -28,7 +28,7 @@ async def start(bot, cmd):
                 ident, file_id = cmd.text.split("_-_-_-_")
                 await bot.send_message(
                     chat_id=cmd.from_user.id,
-                    text="**Please Join Our Updates Channel to use this Bot!       ഞങ്ങളുടെ അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്താൽ മാത്രമേ മൂവീസ് കിട്ടുവോള്ളു !**",
+                    text="**Please Join Our Updates Channel to use this Bot!**",
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
@@ -67,7 +67,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♨️ JOIN UPDATES CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL')
+                        InlineKeyboardButton('♨️ JOIN UPDATES CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel')
                     ],
                     [
                         InlineKeyboardButton('🔍 SEARCH AGAIN 🔎', switch_inline_query_current_chat='')
@@ -85,7 +85,7 @@ async def start(bot, cmd):
         invite_link = await bot.create_chat_invite_link(int(AUTH_CHANNEL))
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="**Please Join Our Updates Channel to use this Bot!         ഞങ്ങളുടെ അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്താൽ മാത്രമേ മൂവി കിട്ടുവോള്ളു!**",
+            text="**Please Join Our Updates Channel to use this Bot!**",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
@@ -103,7 +103,7 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("🔍 SEARCH MOVIES 🔎", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("♨️ UPDATES CHANNEL ♨️", url="https://t.me/CinemaCompanyOFFICIAL")
+                        InlineKeyboardButton("♨️ UPDATES CHANNEL ♨️", url="https://t.me/TGmoviesUpdatesChannel")
                     ]
                 ]
             )
@@ -192,7 +192,7 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL'),
+            InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel'),
             InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/cinemacompany_officials')
         ]
         ]
