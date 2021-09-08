@@ -297,7 +297,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♨️ JOIN CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel')
+                        InlineKeyboardButton('🔍 SEARCH MOVIES 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 
@@ -328,7 +328,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♨️ JOIN CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel')
+                        InlineKeyboardButton('🔍 SEARCH MOVIES 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 
@@ -344,4 +344,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("This Is Not For You 😬😬",show_alert=True)
+        await query.answer("This Is Not For You 🤪",show_alert=True)
