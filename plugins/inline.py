@@ -90,9 +90,7 @@ async def answer(bot, query):
 
 def get_reply_markup(query):
     buttons = [
-        [
-            InlineKeyboardButton('♨️ JOIN CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel')
-        ],
+        
         [
             InlineKeyboardButton('🔍 SEARCH AGAIN 🔎', switch_inline_query_current_chat=query)
         ]
