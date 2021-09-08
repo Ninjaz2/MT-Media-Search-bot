@@ -66,9 +66,7 @@ async def start(bot, cmd):
                 if f_caption is None:
                     f_caption = f"{files.file_name}"
                 buttons = [
-                    [
-                        InlineKeyboardButton('♨️ JOIN UPDATES CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel')
-                    ],
+                    
                     [
                         InlineKeyboardButton('🔍 SEARCH AGAIN 🔎', switch_inline_query_current_chat='')
                     ]
@@ -89,7 +87,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("♨️ JOIN UPDATES CHANNEL ♨️", url=invite_link.invite_link)
+                        InlineKeyboardButton("🔍 SEARCH MOVIES🔎", switch_inline_query_current_chat='')
                     ]
                 ]
             )
