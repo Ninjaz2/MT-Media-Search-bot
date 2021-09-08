@@ -67,7 +67,7 @@ async def start(bot, cmd):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♨️ JOIN CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL')
+                        InlineKeyboardButton('♨️ JOIN UPDATES CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL')
                     ],
                     [
                         InlineKeyboardButton('🔍 SEARCH AGAIN 🔎', switch_inline_query_current_chat='')
@@ -102,11 +102,8 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔍 SEARCH MOVIE 🔎", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("🔍 SEARCH MOVIES 🔎", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("♨️ UPDATES CHANNEL ♨️", url="https://t.me/CinemaCompanyOFFICIAL")
-                    ],
-                    [
-                        InlineKeyboardButton("👥 MOVIES REQUEST GROUP 👥", url="https://t.me/cinemacompany_officials")
                     ]
                 ]
             )
