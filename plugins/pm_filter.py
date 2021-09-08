@@ -27,7 +27,7 @@ async def filter(client, message):
         except UserNotParticipant:
             await client.send_message(
                 chat_id=message.from_user.id,
-                text="**Please Join Our Updates Channel First Then Type Movie Name Here!       ഞങ്ങളുടെ അപ്ഡേറ്റ് ചാനലിൽ ജോയിൻ ചെയ്ത ശേഷം മൂവി നെയിം ഇവിടെ ടൈപ്പ് ചെയ്യുക! **",
+                text="**Please Join Our Updates Channel First Then Type Movie Name Here!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
@@ -273,7 +273,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL'),
+                    InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel'),
                     InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/cinemacompany_officials')
                 ]
                 ]
@@ -297,7 +297,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♨️ JOIN CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL')
+                        InlineKeyboardButton('♨️ JOIN CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel')
                     ]
                     ]
                 
@@ -310,7 +310,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     )
         elif query.data.startswith("checksub"):
             if AUTH_CHANNEL and not await is_subscribed(client, query):
-                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😬😬    ചാനലിൽ ജോയിൻ ചെയ്തിട്ട് Try Again കൊടുക്കു മിസ്റ്റർ, നിങ്ങൾക്ക് വേണ്ട മൂവി കിട്ടും 😬😬 ",show_alert=True)
+                await query.answer("I Like Your Smartness, But Don't Be Oversmart 😬😬 ",show_alert=True)
                 return
             ident, file_id = query.data.split("#")
             filedetails = await get_file_details(file_id)
@@ -328,7 +328,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('♨️ JOIN CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL')
+                        InlineKeyboardButton('♨️ JOIN CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel')
                     ]
                     ]
                 
@@ -344,4 +344,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("ഹലോ കുമ്മനം ഇതു നിങ്ങൾക്കുള്ള മൂവി അല്ല മിസ്റ്റർ 🤪🤪 This Is Not For You 😬😬",show_alert=True)
+        await query.answer("This Is Not For You 😬😬",show_alert=True)
