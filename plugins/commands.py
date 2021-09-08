@@ -87,7 +87,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("♨️ JOIN UPDATES CHANNEL ♨️", switch_inline_query_current_chat='')
+                        InlineKeyboardButton("♨️ JOIN UPDATES CHANNEL ♨️", url='https://t.me/TGmoviesUpdatesChannel')
                     ]
                 ]
             )
