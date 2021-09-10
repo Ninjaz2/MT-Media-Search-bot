@@ -105,6 +105,13 @@ async def start(bot, cmd):
                     ],
                     [
                         InlineKeyboardButton("❔ HOW TO USE ME ❓", url="https://t.me/TGmoviesUpdatesChannel/2639")
+                    ],
+                    [
+                        InlineKeyboardButton("⚠️ DISCLAIMER ⚠️", switch_query.answer("⚠️Disclaimer ⚠️
+
+All the files in this bot are freely available on the internet or posted by somebody else.This bot is indexing files which are already uploaded on Telegram for ease of searching,We respect all the copyright laws and works in compliance with DMCA and EUCD.If anything is against law please contact us so that it can be removed asap. 
+
+Contact Admin😎👉 @TGmoviesAdmin_Bot",show_alert=True)
                     ]
                 ]
             )
