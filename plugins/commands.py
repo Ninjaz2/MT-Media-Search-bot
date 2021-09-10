@@ -68,7 +68,7 @@ async def start(bot, cmd):
                 buttons = [
                     
                     [
-                        InlineKeyboardButton('🔍 SEARCH AGAIN 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton('🔍 SEARCH MOVIES 🔎', switch_inline_query_current_chat='')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -102,6 +102,9 @@ async def start(bot, cmd):
                     [
                         InlineKeyboardButton("🔍 SEARCH MOVIES 🔎", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("♨️ UPDATES CHANNEL ♨️", url="https://t.me/TGmoviesUpdatesChannel")
+                    ],
+                    [
+                        InlineKeyboardButton("❔ HOW TO USE ME ❓", url="https://t.me/TGmoviesUpdatesChannel/2639")
                     ]
                 ]
             )
