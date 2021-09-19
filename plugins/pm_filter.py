@@ -31,7 +31,7 @@ async def filter(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("♨️ JOIN UPDATES CHANNEL ♨️", url=invite_link.invite_link)
+                            InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url=invite_link.invite_link)
                         ]
                     ]
                 ),
@@ -273,7 +273,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/Spyromovie'),
+                    InlineKeyboardButton('📢 UPDATES CHANNEL 📢', url='https://t.me/Spyromovie'),
                     InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/spyrogroups')
                 ]
                 ]
@@ -297,10 +297,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{files.file_name}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔍 SEARCH MOVIES 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton("👥 JOIN GROUP 👥", url="https://t.me/spyrogroups")
                     ],
                     [
-                        InlineKeyboardButton("♨️ JOIN CHANNEL ♨️", url="https://t.me/Spyromovie")
+                        InlineKeyboardButton("📢 JOIN CHANNEL 📢", url="https://t.me/Spyromovie")
                     ]
                     ]
                 
@@ -331,10 +331,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     f_caption = f"{title}"
                 buttons = [
                     [
-                        InlineKeyboardButton('🔍 SEARCH MOVIES 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton("👥 JOIN GROUP 👥", url="https://t.me/spyrogroups")
                     ],
                     [
-                        InlineKeyboardButton("♨️ JOIN CHANNEL ♨️", url="https://t.me/Spyromovie")
+                        InlineKeyboardButton("📣 JOIN CHANNEL 📣", url="https://t.me/Spyromovie")
                     ]
                     ]
                 
