@@ -92,10 +92,10 @@ def get_reply_markup(query):
     buttons = [
         
         [
-            InlineKeyboardButton('🔍 SEARCH AGAIN 🔎', switch_inline_query_current_chat=query)
+            InlineKeyboardButton("👥 JOIN GROUP 👥", url="https://t.me/spyrogroups")
         ],
         [
-            InlineKeyboardButton("♨️ JOIN CHANNEL ♨️", url="https://t.me/Spyromovie")
+            InlineKeyboardButton("📢 JOIN CHANNEL 📢", url="https://t.me/Spyromovie")
         ]
         ]
     return InlineKeyboardMarkup(buttons)
