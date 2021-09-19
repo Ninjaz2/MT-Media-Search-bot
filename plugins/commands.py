@@ -32,7 +32,7 @@ async def start(bot, cmd):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("♨️ JOIN UPDATES CHANNEL ♨️", url=invite_link.invite_link)
+                                InlineKeyboardButton("📣 JOIN UPDATES CHANNEL 📣", url=invite_link.invite_link)
                             ],
                             [
                                 InlineKeyboardButton("🔄 TRY AGAIN", callback_data=f"checksub#{file_id}")
@@ -68,10 +68,10 @@ async def start(bot, cmd):
                 buttons = [
                     
                     [
-                        InlineKeyboardButton('🔍 SEARCH MOVIES 🔎', switch_inline_query_current_chat='')
+                        InlineKeyboardButton("👥 JOIN GROUP 👥", url="https://t.me/spyrogroups")
                     ],
                     [
-                        InlineKeyboardButton("♨️ JOIN CHANNEL ♨️", url="https://t.me/Spyromovie")
+                        InlineKeyboardButton("📣 JOIN CHANNEL 📣", url="https://t.me/Spyromovie")
                     ]
                     ]
                 await bot.send_cached_media(
@@ -90,7 +90,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("♨️ JOIN UPDATES CHANNEL ♨️", url='https://t.me/Spyromovie')
+                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url='https://t.me/Spyromovie')
                     ]
                 ]
             )
@@ -103,8 +103,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔍 SEARCH MOVIES 🔎", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("♨️ JOIN UPDATES CHANNEL ♨️", url="https://t.me/Spyromovie")
+                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url="https://t.me/Spyromovie")
                     ],
                     [
                         InlineKeyboardButton("👥 MOVIES REQUEST GROUP 👥", url="https://t.me/spyrogroups")
