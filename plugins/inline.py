@@ -95,7 +95,7 @@ def get_reply_markup(query):
             InlineKeyboardButton("🔍 SEARCH AGAIN 🔎", switch_inline_query_current_chat='')
         ],
         [
-            InlineKeyboardButton("📢 JOIN CHANNEL 📢", url="https://t.me/Spyromovie")
+            InlineKeyboardButton("📢 JOIN CHANNEL 📢", url="https://t.me/CinemaCompanyOFFICIAL")
         ]
         ]
     return InlineKeyboardMarkup(buttons)
