@@ -71,7 +71,7 @@ async def start(bot, cmd):
                         InlineKeyboardButton("🔍 SEARCH AGAIN 🔎", switch_inline_query_current_chat='')
                     ],
                     [
-                        InlineKeyboardButton("📣 JOIN CHANNEL 📣", url="https://t.me/Spyromovie")
+                        InlineKeyboardButton("📣 JOIN CHANNEL 📣", url="https://t.me/CinemaCompanyOFFICIAL")
                     ]
                     ]
                 await bot.send_cached_media(
@@ -90,7 +90,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url='https://t.me/Spyromovie')
+                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url='https://t.me/CinemaCompanyOFFICIAL')
                     ]
                 ]
             )
@@ -103,10 +103,11 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url="https://t.me/Spyromovie")
+                        InlineKeyboardButton("🔍 SEARCH MOVIES 🔎", switch_inline_query_current_chat='')
+                        InlineKeyboardButton("📢 JOIN CHANNEL 📢", url="https://t.me/CinemaCompanyOFFICIAL")
                     ],
                     [
-                        InlineKeyboardButton("👥 MOVIES REQUEST GROUP 👥", url="https://t.me/spyrogroups")
+                        InlineKeyboardButton("👥 MOVIES REQUEST GROUP 👥", url="https://t.me/cinemacompany_officials")
                     ]
                 ]
             )
@@ -195,8 +196,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/Spyromovie'),
-            InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/spyrogroups')
+            InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL'),
+            InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/cinemacompany_officials')
         ]
         ]
     
