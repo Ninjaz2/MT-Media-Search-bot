@@ -104,7 +104,9 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("🔍 SEARCH MOVIES 🔎", switch_inline_query_current_chat='')
-                        InlineKeyboardButton("📢 JOIN CHANNEL 📢", url="https://t.me/CinemaCompanyOFFICIAL")
+                    ],
+                    [
+                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url="https://t.me/CinemaCompanyOFFICIAL")
                     ],
                     [
                         InlineKeyboardButton("👥 MOVIES REQUEST GROUP 👥", url="https://t.me/cinemacompany_officials")
