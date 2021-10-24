@@ -69,9 +69,6 @@ async def start(bot, cmd):
                     
                     [
                         InlineKeyboardButton("🔍 SEARCH AGAIN 🔎", switch_inline_query_current_chat='')
-                    ],
-                    [
-                        InlineKeyboardButton("📣 JOIN CHANNEL 📣", url="https://t.me/CinemaCompanyOFFICIAL")
                     ]
                     ]
                 await bot.send_cached_media(
@@ -90,7 +87,7 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url='https://t.me/CinemaCompanyOFFICIAL')
+                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url='https://t.me/TGmoviesUpdatesChannel')
                     ]
                 ]
             )
@@ -106,10 +103,10 @@ async def start(bot, cmd):
                         InlineKeyboardButton("🔍 SEARCH MOVIES 🔎", switch_inline_query_current_chat='')
                     ],
                     [
-                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url="https://t.me/CinemaCompanyOFFICIAL")
+                        InlineKeyboardButton("📢 JOIN UPDATES CHANNEL 📢", url="https://t.me/TGmoviesUpdatesChannel")
                     ],
                     [
-                        InlineKeyboardButton("👥 MOVIES REQUEST GROUP 👥", url="https://t.me/cinemacompany_officials")
+                        InlineKeyboardButton("❓ TUTORIAL VIDEO ❓", url="https://t.me/TGmoviesUpdatesChannel/2639")
                     ]
                 ]
             )
@@ -198,8 +195,8 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/CinemaCompanyOFFICIAL'),
-            InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/cinemacompany_officials')
+            InlineKeyboardButton('♨️ UPDATES CHANNEL ♨️', url='https://t.me/TGmoviesUpdatesChannel'),
+            InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/TGmoviesUpdatesChannel')
         ]
         ]
     
