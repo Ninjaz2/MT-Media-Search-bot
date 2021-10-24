@@ -1,15 +1,15 @@
-# Modified Version Of [Media Search bot](https://github.com/NINJAZ-TG/MT-Media-Search-bot)
+# Modified Version Of [Media Search bot](https://github.com/Ninjaz2/MT-Media-Search-bot)
 
 </a>
 </p>
 <p align="center">
-  <a href="https://github.com/NINJAZ-TG/MT-Media-Search-bot/stargazers">
-    <img src="https://img.shields.io/github/stars/NINJAZ-TG/MT-Media-Search-bot?style=social">
+  <a href="https://github.com/Ninjaz2/MT-Media-Search-bot/stargazers">
+    <img src="https://img.shields.io/github/stars/Ninjaz2/MT-Media-Search-bot?style=social">
 
   </a>
   
-  <a href="https://github.com/NINJAZ-TG/MT-Media-Search-bot/fork">
-    <img src="https://img.shields.io/github/forks/NINJAZ-TG/MT-Media-Search-bot?label=Fork&style=social">
+  <a href="https://github.com/Ninjaz2/MT-Media-Search-bot/fork">
+    <img src="https://img.shields.io/github/forks/Ninjaz2/MT-Media-Search-bot?label=Fork&style=social">
 
   </a>  
 </p>
@@ -29,7 +29,7 @@
 ## Installation
 
 ### Easy Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/NINJAZ-TG/MT-Media-Search-bot.git)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Ninjaz2/MT-Media-Search-bot)
 ### Hard Way
 
 
