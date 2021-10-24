@@ -273,8 +273,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "about":
             buttons = [
                 [
-                    InlineKeyboardButton('📢 UPDATES CHANNEL 📢', url='https://t.me/CinemaCompanyOFFICIAL'),
-                    InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/CinemaCompanyOFFICIAL')
+                    InlineKeyboardButton('📢 UPDATES CHANNEL 📢', url='https://t.me/TGmoviesUpdatesChannel'),
+                    InlineKeyboardButton('👥 MOVIES REQUEST GROUP 👥', url='https://t.me/TGmoviesUpdatesChannel')
                 ]
                 ]
             
@@ -300,7 +300,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         InlineKeyboardButton("🔍 SEARCH AGAIN 🔎", switch_inline_query_current_chat='')
                     ],
                     [
-                        InlineKeyboardButton("📢 JOIN CHANNEL 📢", url="https://t.me/CinemaCompanyOFFICIAL")
+                        InlineKeyboardButton("📢 JOIN CHANNEL 📢", url="https://t.me/TGmoviesUpdatesChannel")
                     ]
                     ]
                 
@@ -334,7 +334,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         InlineKeyboardButton("🔍 SEARCH AGAIN 🔎", switch_inline_query_current_chat='')
                     ],
                     [
-                        InlineKeyboardButton("📣 JOIN CHANNEL 📣", url="https://t.me/CinemaCompanyOFFICIAL")
+                        InlineKeyboardButton("📣 JOIN CHANNEL 📣", url="https://t.me/TGmoviesUpdatesChannel")
                     ]
                     ]
                 
@@ -350,4 +350,4 @@ async def cb_handler(client: Client, query: CallbackQuery):
         elif query.data == "pages":
             await query.answer()
     else:
-        await query.answer("ഇതു നിങ്ങൾക്ക് ഉള്ള മൂവി അല്ല മിസ്റ്റർ 😂😂 This Is Not For You 🤪🤪",show_alert=True)
+        await query.answer(" 😂😂 This Is Not For You 🤪🤪",show_alert=True)
